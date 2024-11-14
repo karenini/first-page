@@ -22,13 +22,33 @@
             justify-content: center; /* 横方向に中央揃え */
             align-items: center;
             gap: 20px; /* 画像とテキストの間のスペース */
+            flex-wrap: wrap; /* 画面サイズに合わせて折り返す */
         }
 
         /* 箱組にするためのテキストボックス */
         .text-box {
-            max-width: 300px; /* テキスト部分の幅を指定 */
+            max-width: 300px; /* テキスト部分の最大幅を指定 */
             text-align: justify; /* 箱組 */
             padding: 10px;
+            width: 100%; /* テキスト部分を親の幅に合わせる */
+        }
+
+        /* 画像のスタイル */
+        .horizontal-layout img {
+            max-width: 100%; /* 画像の幅を親要素に合わせる */
+            height: auto; /* 高さは自動調整 */
+        }
+
+        /* メディアクエリ（スマホ用） */
+        @media (max-width: 768px) {
+            .horizontal-layout {
+                flex-direction: column; /* スマホでは縦並びにする */
+                align-items: flex-start; /* 左寄せに変更 */
+            }
+
+            .text-box {
+                max-width: 100%; /* スマホ用にテキストの幅を調整 */
+            }
         }
     </style>
 </head>
