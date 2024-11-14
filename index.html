@@ -16,11 +16,17 @@
             background-image: url(white_00061.jpg);
         }
 
-        /* 画像とテキストを横並びにするためのスタイル */
+        /* 画像とテキストを横並びに中央配置するスタイル */
         .horizontal-layout {
             display: flex;
+            justify-content: center; /* 横方向に中央揃え */
             align-items: center;
             gap: 20px; /* 画像とテキストの間のスペース */
+        }
+
+        .text-box {
+            max-width: 300px; /* テキスト部分の幅を指定 */
+            text-align: justify; /* テキストを箱組 */
         }
     </style>
 </head>
@@ -34,12 +40,14 @@
     <h1>自己紹介ページ</h1>
     <p>私が制作した100Findsと趣味について紹介します</p> 
 
-    <!-- 画像とテキストを横並びにする部分 -->
+    <!-- 画像とテキストを中央配置で横並びにする部分 -->
     <div class="horizontal-layout">
         <img src="tume1.png" width="400">
-        <p>
-            100Findsでは爪をテーマに写真を集めました。左は表紙と裏表紙になります。爪の持ち主の特徴によって、4つの章に分けました。
-        </p>
+        <div class="text-box">
+            <p>
+                100Findsでは爪をテーマに写真を集めました。左は表紙と裏表紙になります。爪の持ち主の特徴によって、4つの章に分けました。
+            </p>
+        </div>
     </div>
 
     <img src="tume2.png" width="400">
