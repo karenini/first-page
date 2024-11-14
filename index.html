@@ -5,41 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex" />
     <title>自己紹介ページ</title>
-    <!-- Google Fontsのリンク -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: 'Noto Sans JP', sans-serif; /* Google FontsのNoto Sans JPフォントを使用 */
+            font-family: 'Noto Sans JP', sans-serif;
             border-width: 5px;
             border-color: gray;
             border-style: solid;
             border-radius: 5px;
             padding: 16px;
             margin-bottom: 8px;
-            background-image: url(white_00061.jpg);
         }
 
-        /* 画像とテキストを横並びに中央配置するスタイル */
+        /* 画像とテキストを横並びに中央配置 */
         .horizontal-layout {
             display: flex;
-            justify-content: center; /* 横方向に中央揃え */
+            justify-content: center;
             align-items: center;
             gap: 20px; /* 画像とテキストの間のスペース */
             flex-wrap: wrap; /* 画面サイズに合わせて折り返す */
+            margin-bottom: 30px; /* 画像間の縦のスペースを増加 */
         }
 
-        /* 箱組にするためのテキストボックス */
+        /* テキストボックス */
         .text-box {
-            max-width: 300px; /* テキスト部分の最大幅を指定 */
+            max-width: 300px; /* 幅を指定 */
             text-align: justify; /* 箱組 */
             padding: 10px;
-            width: 100%; /* テキスト部分を親の幅に合わせる */
+            width: 100%;
         }
 
         /* 画像のスタイル */
         .horizontal-layout img {
-            max-width: 100%; /* 画像の幅を親要素に合わせる */
-            height: auto; /* 高さは自動調整 */
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px; /* 画像間の縦の距離を開ける */
         }
 
         /* メディアクエリ（スマホ用） */
@@ -67,14 +67,8 @@
     </style>
 </head>
 <body>
-    <img class="maru" src="293120.jpg" alt="ドーナツ" width="193" height="193" style="border-radius:25%;">
-    <img src="293123_0.jpg" alt="シャンプー" width="193" height="193">
-    <img src="293125_0.jpg" alt="宇宙人" width="193" height="193">
-    <img src="293124_0.jpg" alt="服" width="193" height="193">
-    <img src="tume1.png" width="172.3" height="53.1">
-
     <h1>自己紹介ページ</h1>
-    <p>私が制作した100Findsと趣味について紹介します</p> 
+    <p>私が制作した100Findsと趣味について紹介します</p>
 
     <!-- 画像とテキストを中央配置で横並びにする部分 -->
     <div class="horizontal-layout">
@@ -112,5 +106,6 @@
     <img src="293125_0.jpg" alt="宇宙人" width="193" height="193">
     <p>ドナルドのパジャマを着ます</p>
     <img src="293124_0.jpg" alt="服" width="193" height="193">  
+
 </body>
 </html>
