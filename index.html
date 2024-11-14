@@ -31,9 +31,11 @@
         /* 箱組にするためのテキストボックス */
         .text-box {
             max-width: 300px; /* テキスト部分の最大幅を指定 */
-            text-align: justify; /* 箱組 */
+            text-align: left; /* 箱組内のテキストは左詰め */
             padding: 10px;
             width: 100%; /* テキスト部分を親の幅に合わせる */
+            background-color: #f8f8f8; /* 背景色を薄い色に設定（オプション） */
+            border-radius: 8px; /* 角を丸くする（オプション） */
         }
 
         /* 画像のスタイル */
@@ -63,7 +65,6 @@
         h1, p {
             text-align: center; /* 見出しや段落を中央揃え */
         }
-
     </style>
 </head>
 <body>
